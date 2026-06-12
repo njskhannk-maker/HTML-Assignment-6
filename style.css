@@ -1,0 +1,387 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.main-container{
+    width:100%;
+}
+
+/* HEADER */
+
+.logo-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h3{
+    font-size:28px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
+
+.signup-btn{
+    background:black;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.banner{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    background:#f4f4f4;
+    border-radius:30px;
+    padding:40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.banner-text h1{
+    font-size:4rem;
+    line-height:1.2;
+}
+
+.highlight{
+    color:#f4c400;
+}
+
+.banner-text p{
+    margin:20px 0;
+}
+
+.shop-btn{
+    background:black;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* BRANDS */
+
+.brands{
+    background:#f4c400;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+/* SECTION HEADINGS */
+
+.na-heading,
+.younfav-heading{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto 30px;
+    font-size:32px;
+}
+
+/* ARRIVALS */
+
+.new-arrival{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.new-arrival div{
+    text-align:center;
+}
+
+.new-arrival img{
+    border-radius:20px;
+}
+
+/* PAYDAY */
+
+.payday-container{
+    margin-top:80px;
+    background:#f4c400;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:50px;
+}
+
+.payday-text-container h1{
+    font-size:4rem;
+}
+
+.shop-btn2{
+    background:black;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    margin-top:20px;
+    border-radius:8px;
+}
+
+.highlight1{
+    background:white;
+    padding:0 15px;
+}
+
+/* YOUNG FAV */
+
+.youngs-fav-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.youngs-fav-container img{
+    border-radius:20px;
+}
+
+/* APP SECTION */
+
+.apps-details-container{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.appsdetail-left-container h3{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.appsdetail-left-container p{
+    margin-bottom:20px;
+}
+
+/* COMMUNITY */
+
+.community{
+    background:#f4c400;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.community h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.community p{
+    margin-bottom:20px;
+}
+
+.community form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.community input{
+    width:350px;
+    max-width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+}
+
+.community button{
+    padding:15px 25px;
+    border:none;
+    background:black;
+    color:white;
+    border-radius:8px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#111;
+    color:white;
+    padding:60px 20px;
+}
+
+.footer-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.footer-right{
+    display:flex;
+    gap:60px;
+}
+
+.footer-links ul{
+    list-style:none;
+}
+
+.footer-links li{
+    margin:10px 0;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#ccc;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+    .banner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .banner-text h1{
+        font-size:3rem;
+    }
+
+    .payday-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .apps-details-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-container{
+        flex-direction:column;
+    }
+
+    .footer-right{
+        justify-content:space-between;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .logo-container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .banner-text h1{
+        font-size:2.2rem;
+    }
+
+    .new-arrival{
+        grid-template-columns:1fr;
+    }
+
+    .youngs-fav-container{
+        grid-template-columns:1fr;
+    }
+
+    .payday-text-container h1{
+        font-size:2.5rem;
+    }
+
+    .appsdetail-left-container h3{
+        font-size:2rem;
+    }
+
+    .community h2{
+        font-size:1.8rem;
+    }
+
+    .footer-right{
+        flex-direction:column;
+        gap:30px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    .banner{
+        padding:20px;
+    }
+
+    .banner-text h1{
+        font-size:1.8rem;
+    }
+
+    .community input{
+        width:100%;
+    }
+
+    .community button{
+        width:100%;
+    }
+}
